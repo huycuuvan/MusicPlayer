@@ -1,0 +1,24 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+     
+    "build": "npm run build:js:watch & npm run build:css:watch",
+
+ "start": "node_modules/.bin/ttab -t 'Node Server' 'npm run supervisor' & node_modules/.bin/ttab -t 'Building assets' 'npm run build'"
+
+},
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+
